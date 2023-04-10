@@ -7,7 +7,7 @@ public class Juego {
     public static void main(String[] args) throws InterruptedException {
 
         // crea al bot con los barcos y sus posiciones correspondientes
-        Jugador bot = new Jugador("IA", 5);
+        BOT bot = new BOT("IA", 5);
         bot.crearBot(bot.crearDatosBarcosBot());
         for (int i = 0; i < bot.getBarcos().length; i++) {
             bot.introducirBarcoBot(bot.getBarcos()[i]);
