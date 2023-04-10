@@ -3,6 +3,15 @@ public class BOT extends Jugador{
         super(nombre, tetraminosVivos);
     }
 
+    private boolean existeValorRepetido(int[] tipos, int pos) {
+        for (int i = 0; i < pos; i++) {
+            if (tipos[pos] == tipos[i]) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     /**
      * le da valores aleartorios de los tipos de barco para crear los barcos del bot
      * @return valores del los tipos de barco
