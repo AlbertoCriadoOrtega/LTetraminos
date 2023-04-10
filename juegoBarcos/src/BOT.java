@@ -1,4 +1,10 @@
 public class BOT extends Jugador{
+
+    private String nombre;
+    private Tablero propio;
+    private Tablero enemigo;
+    private Tetramino[] barcos = new Tetramino[5];
+    private int tetraminosVivos;
     public BOT(String nombre, int tetraminosVivos) {
         super(nombre, tetraminosVivos);
     }
